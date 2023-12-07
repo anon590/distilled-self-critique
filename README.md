@@ -30,18 +30,5 @@ Once you have generated the synthetic data, you can finetune the model over a tr
 
 Run the notebook [`run_distillation.ipynb`](run_distillation.ipynb) to self-distil the model on the synthetic data generated in the previous seep. The notebook uses the `sentiment` task an example, but it can be easily adapted to the other tasks.
 
-### Citation
 
-If you find this work useful, please consider citing with
-
-```
-@misc{gallego2023distilled,
-      title={Distilled Self-Critique of LLMs with Synthetic Data: a Bayesian Perspective}, 
-      author={Victor Gallego},
-      year={2023},
-      eprint={2312.01957},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
-}
-```
 
