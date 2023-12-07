@@ -1,5 +1,5 @@
-# distilled-self-critique
-Code for the paper "Distilled Self-Critique of LLMs with Synthetic Data: a Bayesian Perspective".
+# distilled Self-Critique
+Code for the paper "Distilled Self-Critique of LLMs with Synthetic Data: a Bayesian Perspective", https://arxiv.org/abs/2312.01957 
 
 ## Synthetic Data Generation (self-critique)
 
@@ -28,4 +28,20 @@ These are the steps for the Gibbs sampling chain described in the paper. In thes
 
 Once you have generated the synthetic data, you can finetune the model over a training split of the synthetic data. You may filter the data first using the reward scores of the revised and original sample (acceptance step in the paper). This is recommended as it improves the results over the test set of prompts.
 
-Code for the self-distillation will be released soon.
+Run the notebook [`run_distillation.ipynb`](run_distillation.ipynb) to self-distil the model on the synthetic data generated in the previous seep. The notebook uses the `sentiment` task an example, but it can be easily adapted to the other tasks.
+
+### Citation
+
+If you find this work useful, please consider citing with
+
+```
+@misc{gallego2023distilled,
+      title={Distilled Self-Critique of LLMs with Synthetic Data: a Bayesian Perspective}, 
+      author={Victor Gallego},
+      year={2023},
+      eprint={2312.01957},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+```
+
